@@ -1,8 +1,5 @@
 # 10001-anolisos-7-docker-base
 
-## 0 status
-
-[![ci](https://github.com/archlinux365/10001-anolisos-7-docker-base/actions/workflows/ci.yml/badge.svg)](https://github.com/archlinux365/10001-anolisos-7-docker-base/actions/workflows/ci.yml) [![Docker Pulls](https://img.shields.io/docker/pulls/gnuhub/10001-anolisos-7-docker-base-main.svg)](https://hub.docker.com/r/gnuhub/10001-anolisos-7-docker-base-main/)
 
 ## 1 support
 
@@ -26,6 +23,6 @@
 ## 4 how to use
 
 ```
-docker pull gnuhub/10001-anolisos-7-docker-base-main:latest
-docker run -it gnuhub/10001-anolisos-7-docker-base-main:latest bash
+docker pull gnuhub/openos365-10001-anolisos-7-docker-main:latest
+docker run -it gnuhub/openos365-10001-anolisos-7-docker-main:latest bash
 ```
