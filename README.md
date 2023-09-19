@@ -8,8 +8,8 @@
 
 ## 2 what
 
-* openeuler-2203-lts docker base images
-
+* openos365-10001-anolisos-7-docker docker images
+  
 ## 3 why (values)
 
 1. setup repo mirror for china `files/install.sh`
