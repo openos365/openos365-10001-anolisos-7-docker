@@ -14,7 +14,7 @@
 
 1. setup repo mirror for china ``files/install.sh``
 1. pr-install some packages `files/install.sh`
-1. pre-config `file/root/``
+1. pre-config `file/root/`
 1. networking problems `using github actions network``
 1. save install and update time `build it using schedule actions`
 1. publish and track `versions` changes
