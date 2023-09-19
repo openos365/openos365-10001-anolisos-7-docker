@@ -35,8 +35,8 @@ docker build . -f Dockerfile \
 -t registry.cn-hangzhou.aliyuncs.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest
 
 
-docker push ghcr.io/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER
-docker push ghcr.io/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest
+# docker push ghcr.io/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER
+# docker push ghcr.io/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest
 # docker push registry.cn-hangzhou.aliyuncs.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER
 # docker push registry.cn-hangzhou.aliyuncs.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest
 # docker push hkccr.ccs.tencentyun.com/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER 
@@ -45,7 +45,7 @@ docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER
 docker push ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:latest
 cd $CMD_PATH
 
-cid=$(docker run -it --detach ghcr.io/${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER)
+cid=$(docker run -it --detach ${GITHUB_REPOSITORY}-$GITHUB_REF_NAME:$GITHUB_RUN_NUMBER)
 
 git pull origin HEAD
 rm -rf versions
