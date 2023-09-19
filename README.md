@@ -12,10 +12,10 @@
 
 ## 3 why (values)
 
-1. setup repo mirror for china ``files/install.sh``
+1. setup repo mirror for china `files/install.sh`
 1. pr-install some packages `files/install.sh`
 1. pre-config `file/root/`
-1. networking problems `using github actions network``
+1. networking problems `using github actions network`
 1. save install and update time `build it using schedule actions`
 1. publish and track `versions` changes
 1. publish and track `yum.repo.d`
@@ -23,6 +23,6 @@
 ## 4 how to use
 
 ```
-docker pull gnuhub/openos365-10001-anolisos-7-docker-main:latest
-docker run -it gnuhub/openos365-10001-anolisos-7-docker-main:latest bash
+docker pull openos365/openos365-10001-anolisos-7-docker-main:latest
+docker run -it openos365/openos365-10001-anolisos-7-docker-main:latest bash
 ```
