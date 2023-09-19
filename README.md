@@ -12,7 +12,7 @@
   
 ## 3 why (values)
 
-1. setup repo mirror for china `files/install.sh`
+1. setup repo mirror for China `files/install.sh`
 1. pr-install some packages `files/install.sh`
 1. pre-config `file/root/`
 1. networking problems `using github actions network`
