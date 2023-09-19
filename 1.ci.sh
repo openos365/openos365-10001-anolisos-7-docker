@@ -13,11 +13,11 @@ git remote -v
 git remote set-url origin git@github.com:${GITHUB_REPOSITORY}.git
 git remote -v
 
-ssh-keygen -f "/home/runner/.ssh/known_hosts" -R "frs.sourceforge.net"
-ssh-keyscan "frs.sourceforge.net" >> /home/runner/.ssh/known_hosts
-ssh-keygen -f "/home/runner/.ssh/known_hosts" -R "github.com"
-ssh-keyscan "github.com" >> /home/runner/.ssh/known_hosts
-cat /home/runner/.ssh/known_hosts
+ssh-keygen -f "$HOME/.ssh/known_hosts" -R "frs.sourceforge.net"
+ssh-keyscan "frs.sourceforge.net" >> $HOME/.ssh/known_hosts
+ssh-keygen -f "$HOME/.ssh/known_hosts" -R "github.com"
+ssh-keyscan "github.com" >> $HOME/.ssh/known_hosts
+cat $HOME/.ssh/known_hosts
 
 
 env
