@@ -1,9 +1,11 @@
 # openos365-10001-anolisos-7-docker
 
-## 0 star the project
+## 0 star the project if it is helpfull
 
-* star it if you like it, https://github.com/openos365/openos365-10001-anolisos-7-docker
-* dockerhub: https://hub.docker.com/r/openos365/openos365-10001-anolisos-7-docker-main
+* star it at github: https://github.com/openos365/openos365-10001-anolisos-7-docker
+* star it at dockerhub: https://hub.docker.com/r/openos365/openos365-10001-anolisos-7-docker-main
+
+  > Thank you
 
 ## 1 support
 
