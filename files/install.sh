@@ -41,6 +41,8 @@ dnf --assumeyes install sudo
 dnf --assumeyes update
 dnf --assumeyes install qemu-img
 dnf --assumeyes install dosfstools
+dnf --assumeyes install git
+dnf --assumeyes install expect
 
 cd ~
 if [ -d versions ];then
