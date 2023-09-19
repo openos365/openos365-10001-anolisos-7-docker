@@ -36,13 +36,22 @@ sed -e 's!^metalink=!#metalink=!g' \
 
 crb enable
 
+dnf --assumeyes update
+
 dnf --assumeyes install kiwi 
 dnf --assumeyes install sudo
-dnf --assumeyes update
 dnf --assumeyes install qemu-img
 dnf --assumeyes install dosfstools
 dnf --assumeyes install git
 dnf --assumeyes install expect
+dnf --assumeyes install vim
+
+dnf --assumeyes update
+dnf clean all
+dnf makecache
+
+git config --global pull.rebase false
+git config --global core.editor "vim"
 
 cd ~
 if [ -d versions ];then
