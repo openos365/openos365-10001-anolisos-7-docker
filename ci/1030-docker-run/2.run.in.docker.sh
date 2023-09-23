@@ -51,5 +51,13 @@ which apt
 if [ $? -eq 0 ];then
     apt_list
 fi
+cd $CMD_PATH
+chmod -R 777 versions
+
+cd $CMD_PATH
+if [ -d /etc/yum.repos.d/ ];then
+    rsync -avzP --delete /etc/yum.repos.d/ ./yum.repos.d/
+    chmod -R 777 ./yum.repos.d/
+fi
 
 echo "============================================================================"
