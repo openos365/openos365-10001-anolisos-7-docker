@@ -55,10 +55,12 @@ dnf makecache
 
 ######## create the users www and runner=======
 cat /etc/group
-groupadd runner
+
 groupadd www
-useradd -m -d /home/runner -G wheel -g runner runner -s /bin/bash
+groupadd runner
+
 useradd -m -d /home/www -G wheel -g www www -s /bin/bash
+useradd -m -d /home/runner -G wheel -g runner runner -s /bin/bash
 
 echo "root:openos365" | chpasswd
 echo "runner:openos365" | chpasswd
