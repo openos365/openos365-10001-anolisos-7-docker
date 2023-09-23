@@ -17,6 +17,9 @@ env
 
 echo "============================================================================"
 # TODO HERE
+
+echo "openos365">/etc/hostname
+
 cd /etc/
 if [ -d versions ];then
     rm -rf versions
