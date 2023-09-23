@@ -17,6 +17,7 @@ env
 
 echo "============================================================================"
 # TODO HERE
+cd /etc/
 if [ -d versions ];then
     rm -rf versions
 fi
@@ -51,8 +52,6 @@ which apt
 if [ $? -eq 0 ];then
     apt_list
 fi
-cd $CMD_PATH
-chmod -R 777 versions
 
 cd $CMD_PATH
 rsync -avzP --delete /etc/ ./etc/
