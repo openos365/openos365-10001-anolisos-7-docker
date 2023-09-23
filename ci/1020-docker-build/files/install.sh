@@ -34,7 +34,7 @@ sed -e 's!^metalink=!#metalink=!g' \
     -e 's!https\?://download\.example/pub/epel!https://mirrors.tuna.tsinghua.edu.cn/epel!g' \
     -i /etc/yum.repos.d/epel*.repo
 
-crb enable
+# crb enable
 
 dnf --assumeyes update
 
