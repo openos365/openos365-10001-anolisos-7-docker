@@ -45,11 +45,38 @@ dnf --assumeyes install dosfstools
 dnf --assumeyes install git
 dnf --assumeyes install expect
 dnf --assumeyes install vim
+dnf --assumeyes openssh-server
 dnf --assumeyes groupinstall "Development Tools"
+
 
 dnf --assumeyes update
 dnf clean all
 dnf makecache
+
+######## create the users www and runner=======
+cat /etc/group
+groupadd runner
+groupadd www
+useradd -m -d /home/runner -G wheel -g runner runner -s /bin/bash
+useradd -m -d /home/www -G wheel -g www www -s /bin/bash
+
+echo "root:openos365" | chpasswd
+echo "runner:openos365" | chpasswd
+echo "www:openos365" | chpasswd
+
+echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
+
+mkdir -p /etc/sudoers.d
+echo "www ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/www-nopassword
+echo "runner ALL=(ALL) NOPASSWD: ALL"   > /etc/sudoers.d/runner-nopassword
+chmod 750 /etc/sudoers.d/www-nopassword
+chmod 750 /etc/sudoers.d/runner-nopassword
+chmod 750 /etc/sudoers.d/
+cat /etc/passwd
+###############################################
+
+
 
 git config --global pull.rebase false
 git config --global core.editor "vim"
