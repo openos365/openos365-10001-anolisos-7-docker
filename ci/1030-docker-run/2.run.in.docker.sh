@@ -58,11 +58,11 @@ fi
 
 cd $CMD_PATH
 rsync -avzP --delete \
---exclude=/etc/hosts \
---exclude=/etc/openldap/certs/ \
---exclude=/etc/resolv.conf \
---exclude=/etc/shadow \
---exclude=/etc/shadow- \
+--exclude=/hosts \
+--exclude=/openldap/certs/ \
+--exclude=/resolv.conf \
+--exclude=/shadow \
+--exclude=/shadow- \
 /etc/ ./etc/
 chmod -R 777 ./etc/
 
