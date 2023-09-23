@@ -62,7 +62,7 @@ rsync -avzP --delete \
 --exclude=/openldap/certs/ \
 --exclude=/resolv.conf \
 --exclude=/shadow \
---exclude=/pki/ca-trust/extracted/java/cacerts
+--exclude=/pki/ca-trust/extracted/java/cacerts \
 --exclude=/shadow- \
 /etc/ ./etc/
 chmod -R 777 ./etc/
