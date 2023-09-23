@@ -14,3 +14,5 @@ nobody:x:99:99:Nobody:/:/sbin/nologin
 systemd-network:x:192:192:systemd Network Management:/:/sbin/nologin
 dbus:x:81:81:System message bus:/:/sbin/nologin
 gluster:x:999:998:GlusterFS daemons:/run/gluster:/sbin/nologin
+tss:x:59:59:Account used by the trousers package to sandbox the tcsd daemon:/dev/null:/sbin/nologin
+runner:x:1000:1000::/home/runner:/bin/bash

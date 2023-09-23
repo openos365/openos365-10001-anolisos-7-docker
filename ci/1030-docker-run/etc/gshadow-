@@ -8,7 +8,7 @@ disk:::
 lp:::
 mem:::
 kmem:::
-wheel:::
+wheel:::runner
 cdrom:::
 mail:::
 man:::
@@ -33,3 +33,6 @@ ssh_keys:!::
 tss:!::
 stapusr:!::
 stapsys:!::
+stapdev:!::
+runner:!::
+www:!::
