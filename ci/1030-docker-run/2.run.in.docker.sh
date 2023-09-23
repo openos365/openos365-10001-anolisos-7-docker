@@ -17,8 +17,6 @@ env
 
 echo "============================================================================"
 # TODO HERE
-
-cd ~
 if [ -d versions ];then
     rm -rf versions
 fi
