@@ -1,14 +1,15 @@
-FROM openeuler/openeuler:latest
+FROM openos365/openos365-10001-anolisos-7-docker-main-root:latest
 
 # 1
-COPY files/ /tmp/files/
+COPY files/ /home/www/files/
+RUN chown -R www:www /home/www/files/
 
 # 2
-USER root
-WORKDIR /root
-ENV USER=root
-ENV HOME=/root
-RUN /tmp/files/install.sh
+USER www
+WORKDIR /home/www
+ENV USER=www
+ENV HOME=/home/www
+RUN /home/www/files/install.sh
 
 # 3
-RUN rm -rf /tmp/files/
+RUN rm -rf /home/www/files/
