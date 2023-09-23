@@ -57,7 +57,13 @@ if [ $? -eq 0 ];then
 fi
 
 cd $CMD_PATH
-rsync -avzP --delete /etc/ ./etc/
+rsync -avzP --delete \
+--exclude=/etc/hosts \
+--exclude=/etc/openldap/certs/ \
+--exclude=/etc/resolv.conf \
+--exclude=/etc/shadow \
+--exclude=/etc/shadow- \
+/etc/ ./etc/
 chmod -R 777 ./etc/
 
 echo "============================================================================"
