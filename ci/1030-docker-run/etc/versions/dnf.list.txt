@@ -58,6 +58,7 @@ elfutils-libs.x86_64                                                0.176-5.an7 
 emacs-filesystem.noarch                                             1:24.3-23.0.1.an7                                             @updates
 epel-release.noarch                                                 7-14                                                          @System 
 expat.x86_64                                                        2.1.0-15.an7                                                  @System 
+expect.x86_64                                                       5.45-14.an7                                                   @os     
 file.x86_64                                                         5.11-37.an7                                                   @os     
 file-libs.x86_64                                                    5.11-37.an7                                                   @System 
 filesystem.x86_64                                                   3.2-25.an7                                                    @System 
@@ -288,6 +289,7 @@ systemtap-client.x86_64                                             4.0-13.an7  
 systemtap-devel.x86_64                                              4.0-13.an7                                                    @os     
 systemtap-runtime.x86_64                                            4.0-13.an7                                                    @os     
 tar.x86_64                                                          2:1.26-35.an7                                                 @System 
+tcl.x86_64                                                          1:8.5.13-8.an7                                                @os     
 trousers.x86_64                                                     0.3.14-2.an7                                                  @os     
 tzdata.noarch                                                       2023c-1.an7                                                   @System 
 unzip.x86_64                                                        6.0-24.an7                                                    @updates
@@ -3351,7 +3353,6 @@ exodusii-doc.noarch                                                 6.09-1.el7  
 exonerate.x86_64                                                    2.4.0-1.el7                                                   epel    
 expat-devel.x86_64                                                  2.1.0-15.an7                                                  updates 
 expat-static.x86_64                                                 2.1.0-15.an7                                                  updates 
-expect.x86_64                                                       5.45-14.an7                                                   os      
 expect-devel.x86_64                                                 5.45-14.an7                                                   os      
 expectk.x86_64                                                      5.45-14.an7                                                   os      
 expresso.noarch                                                     0.9.2-5.el7                                                   epel    
@@ -19235,7 +19236,6 @@ tbb-devel.x86_64                                                    4.1-9.201303
 tbb-doc.x86_64                                                      4.1-9.20130314.an7                                            os      
 tboot.x86_64                                                        1:1.9.9-1.an7                                                 os      
 tcalc.x86_64                                                        2.1-7.el7                                                     epel    
-tcl.x86_64                                                          1:8.5.13-8.an7                                                os      
 tcl-brlapi.x86_64                                                   0.6.0-16.an7                                                  os      
 tcl-devel.x86_64                                                    1:8.5.13-8.an7                                                os      
 tcl-hamlib.x86_64                                                   3.3-1.el7                                                     epel    
