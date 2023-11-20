@@ -56,7 +56,6 @@ elfutils-libs.x86_64                    0.176-5.an7                     @System
 emacs-filesystem.noarch                 1:24.3-23.0.1.an7               @updates
 epel-release.noarch                     7-14                            @System 
 expat.x86_64                            2.1.0-15.an7                    @System 
-expect.x86_64                           5.45-14.an7                     @os     
 file.x86_64                             5.11-37.an7                     @os     
 file-libs.x86_64                        5.11-37.an7                     @System 
 filesystem.x86_64                       3.2-25.an7                      @System 
@@ -287,7 +286,6 @@ systemtap-client.x86_64                 4.0-13.an7                      @os
 systemtap-devel.x86_64                  4.0-13.an7                      @os     
 systemtap-runtime.x86_64                4.0-13.an7                      @os     
 tar.x86_64                              2:1.26-35.an7                   @System 
-tcl.x86_64                              1:8.5.13-8.an7                  @os     
 trousers.x86_64                         0.3.14-2.an7                    @os     
 tzdata.noarch                           2023c-1.an7                     @System 
 unzip.x86_64                            6.0-24.an7                      @updates
